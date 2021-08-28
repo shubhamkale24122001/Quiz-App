@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="guidelines" id="guidelines">
+            <h2>Guidelines</h2>
+            <p>1. The quiz contains 4 questions.</p>
+            <p>2. A timer will appear in the top right corner of box when quiz starts.</p>
+            <p>3. You have 1 minute to complete the quiz after that quiz will automatically end.</p>
+        </div>
+        <div id="question-container" class="hide">
+            <div class="question-and-timer">
+                <div id="question">Question</div>
+                <div class="timer" id="timer"></div>
+            </div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="finish-quiz hide" id="finish-quiz">Quiz Finished !!</div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+
+    </div>
+</body>
+</html>
